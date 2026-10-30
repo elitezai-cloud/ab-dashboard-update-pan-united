@@ -1,0 +1,63 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AB Dashboard update: projects, sites and project codes</title>
+<meta name="robots" content="noindex">
+<style>
+:root{--ink:#0b4566;--mut:#5b6b78;--bad:#c0392b;--ok:#1e8e5a;--line:#e3e9ee}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#1d2a33;background:#f5f8fa}
+.wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+h1{color:var(--ink);font-size:26px;margin:0 0 6px}.sub{color:var(--mut);font-size:14px;margin-bottom:20px}
+.ready{background:#e8f5ee;border:1px solid #b7dfc8;border-radius:14px;padding:16px 18px;margin-bottom:26px}
+.ready b{color:var(--ok)}.chip{display:inline-block;background:#e3eef6;color:var(--ink);border-radius:99px;padding:1px 9px;font-family:monospace;font-weight:700}
+.sum{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin-bottom:30px}
+.sum h2{font-size:16px;margin:0 0 10px;color:var(--ink)}.sum ol{margin:0;padding-left:20px}.sum li{margin:6px 0;line-height:1.45}
+.sec{margin-bottom:36px}.sec h2{color:var(--ink);font-size:19px;margin:0 0 4px}.sec p.why{color:var(--mut);margin:0 0 14px;font-size:14px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px}
+.tag{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px}
+.b{border-top:4px solid var(--bad)}.b .tag{color:var(--bad)}.a{border-top:4px solid var(--ok)}.a .tag{color:var(--ok)}
+.card img{width:100%;border:1px solid var(--line);border-radius:8px;display:block;margin-bottom:8px}
+.cap{font-size:13.5px;line-height:1.45}
+.how{background:#fff7ef;border:1px solid #f7d3b0;border-radius:10px;padding:10px 12px;font-size:13.5px;margin-top:10px}
+.foot{color:var(--mut);font-size:12.5px;border-top:1px solid var(--line);padding-top:14px;line-height:1.5}
+@media(max-width:700px){.pair{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<h1>AB Dashboard update: projects, sites and project codes</h1>
+<div class="sub">For Lydia · 30 October 2026 · live now at ab.elitez.ai</div>
+
+<div class="ready"><b>✓ Pan United is ready.</b> Project code <span class="chip">P26-46</span> is saved and the site <b style="color:#1d2a33">"Pan United Concrete"</b> is active in Deployment Roster. We removed the extra Pan United left over from the first try, so there is only one.</div>
+
+<div class="sum"><h2>What changed</h2><ol>
+<li><b>Archived sites no longer block their short code.</b> If you archive a site by mistake, you can create a new site with the same short code.</li>
+<li><b>You can add or change a project code at any time</b> from the site details, not only when creating the project.</li>
+<li><b>The field is now called "Project code" everywhere.</b> It was called "Contract no." on the setup form.</li>
+<li><b>Clear error messages.</b> If a short code really is in use by another active site, the message says so in plain English.</li>
+</ol></div>
+
+<div class="sec"><h2>1. Creating a site with a short code from an archived site</h2>
+<p class="why">This is what blocked you: the archived "Pan United" site still held the code PU.</p>
+<div class="pair">
+<div class="card b"><div class="tag">Before</div><img src="img/before-2-save.png" alt="Before: database error"><div class="cap">Saving failed with a technical database error, and it didn't say what to change.</div></div>
+<div class="card a"><div class="tag">Now</div><img src="img/after-2-save.png" alt="Now: site saved with PU"><div class="cap">The same short code saves normally, because the old site is archived.</div></div>
+</div>
+<div class="card" style="margin-top:14px"><div class="tag" style="color:var(--ink)">If the code belongs to another active site</div><img src="img/after-2b-clash.png" alt="Clear duplicate message"><div class="cap">Two active sites still can't share a short code, so roster stays unambiguous. You now get a plain message telling you what to do: choose another short code or leave it blank (it's optional).</div></div>
+</div>
+
+<div class="sec"><h2>2. Adding or fixing a project code later</h2>
+<p class="why">Before, a project created without a code stayed without one.</p>
+<div class="pair">
+<div class="card b"><div class="tag">Before</div><img src="img/before-3-edit.png" alt="Before: no project code option"><div class="cap">Even in Edit mode, there was no way to add the project code.</div></div>
+<div class="card a"><div class="tag">Now</div><img src="img/after-3-edit.png" alt="Now: type the project code"><img src="img/after-3-saved.png" alt="Now: project code saved"><div class="cap">Type the code and press <b>Save code</b>. It then shows beside the project name, with an <b>Edit project code</b> button.</div></div>
+</div>
+<div class="how"><b>How:</b> Sites → click the site → <b>Edit site</b> → <b>Add project code</b> (or <b>Edit project code</b>) → type it → <b>Save code</b>.</div>
+</div>
+
+<div class="sec"><h2>3. The project code field when creating a project</h2>
+<p class="why">Same field, clearer name, so it's harder to miss.</p>
+<div class="pair">
+<div class="card b"><div class="tag">Before</div><img src="img/before-1-field.png" alt="Before: Contract no."><div class="cap">Called "Contract no.", while the rest of the dashboard says "Project code".</div></div>
+<div class="card a"><div class="tag">Now</div><img src="img/after-1-field.png" alt="Now: Project code"><div class="cap">Called "Project code", with an example and a note that it can be changed later.</div></div>
+</div></div>
+
+<div class="foot"><b>Unchanged on purpose:</b> sites are archived rather than deleted, so attendance, photos and reports are never lost.<br>
+Screenshots are from the current version of the dashboard, set up with Pan United's details on a test copy, so nothing live was changed to take them.</div>
+</div></body></html>
